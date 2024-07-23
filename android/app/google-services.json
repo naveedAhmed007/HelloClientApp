@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "929555113150",
+    "project_id": "hello-90a68",
+    "storage_bucket": "hello-90a68.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:929555113150:android:c89cf77c6e68f9d8cceaef",
+        "android_client_info": {
+          "package_name": "com.hello"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6Egm3Ha9VL6f6SAkXekwe17UKzmYrTLE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:929555113150:android:4e944599d9bef642cceaef",
+        "android_client_info": {
+          "package_name": "com.itoasis.yoloadmin2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6Egm3Ha9VL6f6SAkXekwe17UKzmYrTLE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

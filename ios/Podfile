@@ -7,23 +7,32 @@ require Pod::Executable.execute_command('node', ['-p',
 
 platform :ios, min_ios_version_supported
 prepare_react_native_project!
+use_frameworks! :linkage => :static
 
 linkage = ENV['USE_FRAMEWORKS']
 if linkage != nil
   Pod::UI.puts "Configuring Pod with #{linkage}ally linked Frameworks".green
-  use_frameworks! :linkage => linkage.to_sym
+  # use_frameworks! :linkage => linkage.to_sym
+  
+
 end
 
-target 'HelloClientApp' do
+target 'HELLO' do
   config = use_native_modules!
-
+  $RNFirebaseAsStaticFramework = true
+  pod 'Firebase', :modular_headers => true
+  pod 'FirebaseCoreInternal', :modular_headers => true
+  pod 'GoogleUtilities', :modular_headers => true
+  pod 'FirebaseCore', :modular_headers => true
+  pod 'RNFBFirestore', :path => '../node_modules/@react-native-firebase/firestore'
+  # use_modular_headers!
   use_react_native!(
     :path => config[:reactNativePath],
     # An absolute path to your application root.
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
 
-  target 'HelloClientAppTests' do
+  target 'HELLOTests' do
     inherit! :complete
     # Pods for testing
   end
