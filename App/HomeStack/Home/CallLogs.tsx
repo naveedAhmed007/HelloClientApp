@@ -124,17 +124,17 @@ function CallLogs() {
   const handleCallStatus = (role,data) => {
     switch (role) {
       case 1:
-          return "Missed ist call";
+          return "Missed 1st call";
       case 2:
           return "Missed 2nd call";
       case 3:
           return data?.conferenceTime;
       case 4:
-            return "No network on ist call";
+            return "No network on 1st call";
             case 5:
-            return "Busy ist call";
+            return "Busy 1st call";
             case 6:
-              return "Missed ist call";
+              return "Missed 1st call";
               case 7:
                 return "No network on 2nd call";
                 case 8:

@@ -514,7 +514,7 @@ function Dialer() {
                 <Text style={styles.dialButtonText}>{"<"}</Text>
               </TouchableOpacity> */}
             </View>
-            <TouchableOpacity onPress={handleDial} style={styles.callBtn}>
+            <TouchableOpacity onPress={handleDial} disabled={showLoader?true:false} style={styles.callBtn}>
               <Feather name="phone-call" size={30} color="#fff" />
             </TouchableOpacity>
           </View>
