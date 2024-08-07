@@ -1,4 +1,4 @@
-package com.hello
+package com.itoasis.hello;
 
 import android.os.Bundle;
 import com.facebook.react.ReactActivity

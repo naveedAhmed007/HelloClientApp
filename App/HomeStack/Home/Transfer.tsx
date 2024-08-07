@@ -172,7 +172,15 @@ function Transfer() {
     setCountryCode("+" + phoneRef1?.current?.getCountryCode());
     if (isValid1 == false) {
       showToast({ message: "Please enter valid number" });
-    } else {
+    }
+    else if (userLoginNumber==phoneRef1?.current?.getValue()){
+      setLoading(false);
+      showToast({ message: `Cannot transfer credit to yourself` });
+
+    }
+
+    
+    else {
       if (amount == "") {
         showToast({ message: "Please amount" });
       } else {

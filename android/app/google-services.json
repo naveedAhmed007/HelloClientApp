@@ -26,6 +26,25 @@
     },
     {
       "client_info": {
+        "mobilesdk_app_id": "1:929555113150:android:cee76bde0519de32cceaef",
+        "android_client_info": {
+          "package_name": "com.itoasis.hello"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6Egm3Ha9VL6f6SAkXekwe17UKzmYrTLE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
         "mobilesdk_app_id": "1:929555113150:android:4e944599d9bef642cceaef",
         "android_client_info": {
           "package_name": "com.itoasis.yoloadmin2"
